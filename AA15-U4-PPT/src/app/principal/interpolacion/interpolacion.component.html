@@ -1,0 +1,25 @@
+<section class="sectionGeneral">
+    <section class="sectionDesarrollo">
+        <!--h1 por Interpolacion desde el TS-->
+        <h1>{{ Titulo }}</h1>
+
+        <p class="titulo">Event Binding</p>
+
+        <form action="">
+            <input type="button" class="btn btn-success" value="Hide" (click)="toggle()">
+        </form>
+        
+        <p *ngIf="show">Event Binding es el mecanismo de data binding mediante el cual trabaja con los eventos que se encuentran en el DOM.</p>
+
+        <hr>
+
+        <!--p por Interpolacion desde el TS-->
+        <p class="titulo">{{ TwodayTitulo }}</p>
+
+        <!--p por Interpolacion desde el TS-->
+        <p>{{ textarea }}</p>
+
+        <!--textarea por ngModel desde el TS-->
+        <textarea name="" id="" [(ngModel)]="textarea"></textarea>            
+    </section>
+</section>

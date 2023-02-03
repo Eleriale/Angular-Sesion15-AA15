@@ -1,0 +1,67 @@
+<section class="sectionGeneral">
+    <section class="sectionDesarrollo">
+        <section class="">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>CARRERA</th>
+                        <th>OPCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dato of data">
+                        <td>{{ dato.nombre }}</td>
+                        <td>{{ dato.apellido }}</td>
+                        <td>{{ dato.carrera }}</td>
+                        <td>
+                        <button class="btn btn-danger btn-sm" (click)="deleteData(dato.id)">
+                            Eliminar
+                        </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="sectionDelForm">
+            <section class="sectionForm">
+                <h3>Formulario de registro</h3>
+                    <form class="card card-body">
+                        <section class="form-group">
+                            <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nombre"
+                            [(ngModel)]="nombre"
+                            name="nombre"
+                            />
+                        </section>
+                        <section class="form-group">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Apellido"
+                                [(ngModel)]="apellido"
+                                name="apellido"
+                            />
+                        </section>
+                        <section class="form-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Carrera"
+                            [(ngModel)]="carrera"
+                            name="carrera"
+                        />
+                        </section>
+                        <section class="form-group text-center mt-4">
+                            <button class="btn btn-primary" (click)="addData()">Guardar</button>
+                        </section>
+                    </form>
+            </section>
+        </section>
+
+    </section>
+</section>

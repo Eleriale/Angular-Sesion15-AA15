@@ -1,0 +1,34 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.sectionDesarrollo{
+    border: 1px solid rgb(0, 162, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+th, td{
+    text-align: center;
+}
+
+.sectionDelForm{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex: wrap;
+}
+
+form{
+    width: 100%;
+}
+
+.form-group{
+    padding: 0.5rem;
+}
